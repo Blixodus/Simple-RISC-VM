@@ -19,7 +19,7 @@ let execute i =
      exit 0
   | 2 -> (* LOAD *)
      registers.(r_dest i) <- memory.(registers.(r_arg1 i))
-  | 3 -> (* SAVE *)
+  | 3 -> (* STORE *)
      memory.(registers.(r_dest i)) <- registers.(r_arg1 i)
   | 4 -> (* PRINT *)
      Printf.printf (char_of_int registers.(r_arg1 i))
