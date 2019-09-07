@@ -1,2 +1,6 @@
-*.o
+*.cmo
+*.cmi
+Assembler
+VM
+test
 *~
